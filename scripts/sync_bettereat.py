@@ -85,16 +85,7 @@ def num(v):
 
 
 def _remaining(f):
-    # V1: Total 剩餘量 == the row's store remaining on every row (verified).
-    # Fallbacks keep the old single-column layout working too.
-    for key in ("Total 剩餘量", "剩餘量"):
-        v = num(f.get(key))
-        if v is not None:
-            return v
-    store = text_of(f.get("門店代號"))
-    if store:
-        return num(f.get(f"剩餘量 {store}"))
-    return None
+    return num(f.get("Total 剩餘量"))
 
 def fetch_current(token):
     rows = []
