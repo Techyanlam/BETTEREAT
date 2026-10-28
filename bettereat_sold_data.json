@@ -1,7 +1,7 @@
 {
   "source": "BETTEREAT-Feishu-Base",
   "date": "2026-10-28",
-  "generated_at": "2026-10-28T10:28:36+08:00",
+  "generated_at": "2026-10-28T10:33:04+08:00",
   "records": [
     {
       "store": "MAP",
@@ -248,10 +248,20 @@
       "product_code": "P-001",
       "product_name": "驢打滾",
       "unit": "盤",
-      "allocated_pans": 5.0,
-      "no_of_pcs": 245.0,
+      "allocated_pans": 9.0,
+      "no_of_pcs": 441.0,
       "remaining_pcs": 0.0,
-      "sold_pcs": 245
+      "sold_pcs": 441
+    },
+    {
+      "store": "MJF",
+      "product_code": "P-002",
+      "product_name": "白糖糕",
+      "unit": "盤",
+      "allocated_pans": 9.0,
+      "no_of_pcs": 441.0,
+      "remaining_pcs": 0.0,
+      "sold_pcs": 441
     },
     {
       "store": "MJF",
@@ -5941,10 +5951,20 @@
         "product_code": "P-001",
         "product_name": "驢打滾",
         "unit": "盤",
-        "allocated_pans": 5.0,
-        "no_of_pcs": 245.0,
+        "allocated_pans": 9.0,
+        "no_of_pcs": 441.0,
         "remaining_pcs": 0.0,
-        "sold_pcs": 245
+        "sold_pcs": 441
+      },
+      {
+        "store": "MJF",
+        "product_code": "P-002",
+        "product_name": "白糖糕",
+        "unit": "盤",
+        "allocated_pans": 9.0,
+        "no_of_pcs": 441.0,
+        "remaining_pcs": 0.0,
+        "sold_pcs": 441
       },
       {
         "store": "MJF",
