@@ -68,7 +68,7 @@
   <div class="logo">🍰</div>
   <h1>BETTEREAT</h1>
   <p class="sub">門店系統 · 請登入</p>
-  <input id="userInput" type="text" placeholder="帳號" autocomplete="username">
+  <input id="userInput" type="text" placeholder="帳號" autocomplete="username" value="admin" readonly>
   <input id="codeInput" type="password" inputmode="text" placeholder="密碼" autocomplete="current-password">
   <button id="loginBtn">登入</button>
   <div id="loginErr"></div>
@@ -207,7 +207,7 @@ function renderTable(){
 }
 
 document.getElementById("loginBtn").onclick = function(){
-  var u = document.getElementById("userInput").value.trim();
+  var u = "admin";
   var v = document.getElementById("codeInput").value.trim();
   if (!u) { document.getElementById("loginErr").textContent = "請輸入帳號。"; return; }
   if (v === ACCESS_CODE) {
