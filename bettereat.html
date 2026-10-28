@@ -7,39 +7,45 @@
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, "PingFang HK", "Microsoft JhengHei", sans-serif; background: #f6f4ef; color: #2b2620; }
-  .wrap { max-width: 880px; margin: 0 auto; padding: 20px 16px 48px; }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 20px 16px 48px; }
   /* login */
-  #loginView { max-width: 380px; margin: 12vh auto 0; background: #fff; border-radius: 16px; padding: 36px 28px; box-shadow: 0 8px 30px rgba(60,45,20,.10); text-align: center; }
-  #loginView .logo { font-size: 40px; }
-  #loginView h1 { font-size: 22px; margin: 10px 0 4px; letter-spacing: 1px; }
-  #loginView p.sub { color: #8a7f70; font-size: 14px; margin-bottom: 22px; }
-  #userInput, #codeInput { width: 100%; padding: 13px; font-size: 17px; border: 1.5px solid #ddd3c3; border-radius: 10px; text-align: center; }
+  #loginView { max-width: 380px; margin: 12vh auto 0; background: #fff; border-radius: 20px; padding: 40px 28px; box-shadow: 0 12px 36px rgba(60,45,20,.12); text-align: center; }
+  #loginView .logo { font-size: 44px; }
+  #loginView h1 { font-size: 24px; margin: 12px 0 4px; letter-spacing: 2px; }
+  #loginView p.sub { color: #8a7f70; font-size: 14px; margin-bottom: 24px; }
+  #userInput, #codeInput { width: 100%; padding: 13px; font-size: 17px; border: 1.5px solid #ddd3c3; border-radius: 12px; text-align: center; background: #fdfbf7; }
   #userInput { letter-spacing: 0; margin-bottom: 10px; }
   #codeInput { letter-spacing: 2px; }
-  #userInput:focus, #codeInput:focus { outline: none; border-color: #c98a2d; }
-  #userLabel { font-size: 13px; color: #6d6152; margin-right: 8px; }
-  #loginBtn { width: 100%; margin-top: 14px; padding: 13px; font-size: 16px; font-weight: 600; color: #fff; background: #c98a2d; border: none; border-radius: 10px; cursor: pointer; }
+  #userInput:focus, #codeInput:focus { outline: none; border-color: #c98a2d; background: #fff; }
+  #loginBtn { width: 100%; margin-top: 16px; padding: 13px; font-size: 16px; font-weight: 700; color: #fff; background: linear-gradient(135deg, #d99a35, #b97a1e); border: none; border-radius: 12px; cursor: pointer; }
   #loginBtn:active { opacity: .85; }
   #loginErr { color: #c0392b; font-size: 14px; min-height: 20px; margin-top: 10px; }
   /* dashboard */
   #dashView { display: none; }
-  header.top { display: flex; align-items: center; justify-content: space-between; padding: 6px 0 16px; }
+  header.top { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; justify-content: space-between; padding: 14px 0; background: rgba(246,244,239,.96); border-bottom: 1px solid #e8e0d2; }
   header.top .brand { font-size: 20px; font-weight: 700; letter-spacing: .5px; }
   header.top .brand span { color: #c98a2d; }
-  #logoutBtn { background: none; border: 1px solid #d8cfc0; color: #6d6152; padding: 6px 14px; border-radius: 20px; font-size: 13px; cursor: pointer; }
-  .meta { color: #8a7f70; font-size: 13px; margin-bottom: 14px; }
-  .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 20px; }
-  .card { background: #fff; border-radius: 12px; padding: 14px 12px; box-shadow: 0 2px 10px rgba(60,45,20,.06); }
+  #userLabel { font-size: 13px; color: #6d6152; margin-right: 8px; }
+  #logoutBtn { background: #fff; border: 1px solid #d8cfc0; color: #6d6152; padding: 6px 14px; border-radius: 20px; font-size: 13px; cursor: pointer; }
+  .meta { color: #8a7f70; font-size: 13px; margin: 14px 0; line-height: 1.6; }
+  .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 8px; }
+  .card { background: #fff; border-radius: 14px; padding: 14px 12px; box-shadow: 0 2px 10px rgba(60,45,20,.06); border-top: 3px solid #c98a2d; }
   .card .k { font-size: 12px; color: #8a7f70; }
-  .card .v { font-size: 24px; font-weight: 700; margin-top: 4px; }
-  .actions { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 24px; }
+  .card .v { font-size: 26px; font-weight: 700; margin-top: 4px; }
+  h2.sec { font-size: 16px; margin: 22px 0 10px; padding-left: 10px; border-left: 4px solid #c98a2d; }
+  .stores { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 4px; }
+  .store { background: #fff; border-radius: 14px; padding: 12px; box-shadow: 0 2px 10px rgba(60,45,20,.06); }
+  .store .s { font-size: 14px; font-weight: 700; }
+  .store .n { font-size: 22px; font-weight: 700; margin-top: 2px; }
+  .store .n small { font-size: 12px; color: #8a7f70; font-weight: 400; }
+  .store .p { font-size: 12px; color: #8a7f70; margin-top: 2px; }
+  .actions { display: grid; grid-template-columns: 1fr; gap: 12px; margin-bottom: 8px; }
   .action { display: block; text-decoration: none; border-radius: 14px; padding: 20px 16px; color: #fff; }
   .action.a { background: linear-gradient(135deg, #d99a35, #b97a1e); }
   .action.b { background: linear-gradient(135deg, #5b8c5a, #3f6b3e); }
   .action .t { font-size: 18px; font-weight: 700; }
   .action .d { font-size: 13px; opacity: .9; margin-top: 5px; line-height: 1.5; }
   .action.pending { opacity: .55; pointer-events: none; }
-  h2.sec { font-size: 16px; margin: 6px 0 10px; }
   .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 12px; }
   .controls select { padding: 7px 10px; font-size: 14px; border: 1px solid #d8cfc0; border-radius: 8px; background: #fff; }
   .xbtn { padding: 8px 14px; font-size: 13.5px; border: 1px solid #c98a2d; color: #a06a14; background: #fdf8ef; border-radius: 8px; cursor: pointer; }
@@ -50,9 +56,10 @@
   table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 10px rgba(60,45,20,.06); font-size: 14px; }
   th, td { padding: 9px 10px; text-align: left; border-bottom: 1px solid #f0eadf; }
   th { background: #faf7f1; color: #6d6152; font-weight: 600; }
+  tbody tr:nth-child(even) { background: #fdfbf7; }
   td.num, th.num { text-align: right; }
   .foot { color: #a2937f; font-size: 12px; margin-top: 16px; text-align: center; }
-  @media (max-width: 560px) { .cards { grid-template-columns: repeat(2, 1fr); } .actions { grid-template-columns: 1fr; } }
+  @media (max-width: 560px) { .cards, .stores { grid-template-columns: repeat(2, 1fr); } }
 </style>
 </head>
 <body>
@@ -80,6 +87,9 @@
     <div class="card"><div class="k">剩餘（件）</div><div class="v" id="statRemain">–</div></div>
     <div class="card"><div class="k">記錄數</div><div class="v" id="statCount">–</div></div>
   </div>
+
+  <h2 class="sec">各店已銷售</h2>
+  <div class="stores" id="storeCards"></div>
 
   <div class="actions">
     <a class="action a" id="btnFormA" href="#" target="_blank" rel="noopener">
@@ -152,7 +162,16 @@ function applyDate(){
   document.getElementById("statTotal").textContent = fmt(tot);
   document.getElementById("statRemain").textContent = fmt(rem);
   document.getElementById("statCount").textContent = allRecords.length;
-  renderChips(); renderTable();
+  renderChips(); renderStores(); renderTable();
+}
+function renderStores(){
+  var byStore = {}, total = 0;
+  allRecords.forEach(function(r){ var s = r.store || "—"; byStore[s] = (byStore[s] || 0) + (r.sold_pcs || 0); total += r.sold_pcs || 0; });
+  var stores = Object.keys(byStore).sort();
+  document.getElementById("storeCards").innerHTML = stores.map(function(s){
+    var v = byStore[s], pct = total ? Math.round(v / total * 100) : 0;
+    return '<div class="store"><div class="s">' + s + '</div><div class="n">' + fmt(v) + ' <small>件</small></div><div class="p">佔 ' + pct + '%</div></div>';
+  }).join("");
 }
 function csvCell(v){ v = (v === null || v === undefined) ? "" : String(v); return '"' + v.replace(/"/g, '""') + '"'; }
 function downloadCSV(name, rows){
