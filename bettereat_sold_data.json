@@ -1,7 +1,7 @@
 {
   "source": "BETTEREAT-Feishu-Base",
   "date": "2026-10-28",
-  "generated_at": "2026-10-28T11:10:28+08:00",
+  "generated_at": "2026-10-28T11:25:01+08:00",
   "records": [
     {
       "store": "MAP",
@@ -80,8 +80,8 @@
       "unit": "盤",
       "allocated_pans": 4.0,
       "no_of_pcs": 196.0,
-      "remaining_pcs": 0.0,
-      "sold_pcs": 196
+      "remaining_pcs": 101.0,
+      "sold_pcs": 95
     },
     {
       "store": "MAP",
@@ -90,8 +90,8 @@
       "unit": "盤",
       "allocated_pans": 2.0,
       "no_of_pcs": 98.0,
-      "remaining_pcs": 0.0,
-      "sold_pcs": 98
+      "remaining_pcs": 36.0,
+      "sold_pcs": 62
     },
     {
       "store": "MAP",
@@ -245,6 +245,16 @@
     },
     {
       "store": "MJF",
+      "product_code": "P-001",
+      "product_name": "驢打滾",
+      "unit": "盤",
+      "allocated_pans": 1.0,
+      "no_of_pcs": 49.0,
+      "remaining_pcs": 0.0,
+      "sold_pcs": 49
+    },
+    {
+      "store": "MJF",
       "product_code": "P-002",
       "product_name": "白糖糕",
       "unit": "盤",
@@ -320,8 +330,8 @@
       "unit": "盤",
       "allocated_pans": 2.0,
       "no_of_pcs": 98.0,
-      "remaining_pcs": 0.0,
-      "sold_pcs": 98
+      "remaining_pcs": 36.0,
+      "sold_pcs": 62
     },
     {
       "store": "MJF",
@@ -670,8 +680,8 @@
       "unit": "盤",
       "allocated_pans": 2.0,
       "no_of_pcs": 98.0,
-      "remaining_pcs": 0.0,
-      "sold_pcs": 98
+      "remaining_pcs": 68.0,
+      "sold_pcs": 30
     },
     {
       "store": "MKH",
@@ -720,8 +730,8 @@
       "unit": "盤",
       "allocated_pans": 2.0,
       "no_of_pcs": 98.0,
-      "remaining_pcs": 0.0,
-      "sold_pcs": 98
+      "remaining_pcs": 18.0,
+      "sold_pcs": 80
     },
     {
       "store": "MKH",
@@ -5773,8 +5783,8 @@
         "unit": "盤",
         "allocated_pans": 4.0,
         "no_of_pcs": 196.0,
-        "remaining_pcs": 0.0,
-        "sold_pcs": 196
+        "remaining_pcs": 101.0,
+        "sold_pcs": 95
       },
       {
         "store": "MAP",
@@ -5783,8 +5793,8 @@
         "unit": "盤",
         "allocated_pans": 2.0,
         "no_of_pcs": 98.0,
-        "remaining_pcs": 0.0,
-        "sold_pcs": 98
+        "remaining_pcs": 36.0,
+        "sold_pcs": 62
       },
       {
         "store": "MAP",
@@ -5938,6 +5948,16 @@
       },
       {
         "store": "MJF",
+        "product_code": "P-001",
+        "product_name": "驢打滾",
+        "unit": "盤",
+        "allocated_pans": 1.0,
+        "no_of_pcs": 49.0,
+        "remaining_pcs": 0.0,
+        "sold_pcs": 49
+      },
+      {
+        "store": "MJF",
         "product_code": "P-002",
         "product_name": "白糖糕",
         "unit": "盤",
@@ -6013,8 +6033,8 @@
         "unit": "盤",
         "allocated_pans": 2.0,
         "no_of_pcs": 98.0,
-        "remaining_pcs": 0.0,
-        "sold_pcs": 98
+        "remaining_pcs": 36.0,
+        "sold_pcs": 62
       },
       {
         "store": "MJF",
@@ -6363,8 +6383,8 @@
         "unit": "盤",
         "allocated_pans": 2.0,
         "no_of_pcs": 98.0,
-        "remaining_pcs": 0.0,
-        "sold_pcs": 98
+        "remaining_pcs": 68.0,
+        "sold_pcs": 30
       },
       {
         "store": "MKH",
@@ -6413,8 +6433,8 @@
         "unit": "盤",
         "allocated_pans": 2.0,
         "no_of_pcs": 98.0,
-        "remaining_pcs": 0.0,
-        "sold_pcs": 98
+        "remaining_pcs": 18.0,
+        "sold_pcs": 80
       },
       {
         "store": "MKH",
